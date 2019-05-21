@@ -1,0 +1,14 @@
+{
+  "name": "webpack-contextmodule-dep-warning-bug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.32.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "scripts": {
+    "build": "webpack --mode development",
+    "build-w-fix": "webpack --mode development --plugin ./FixContextModuleDepWarningsPlugin.js"
+  }
+}
